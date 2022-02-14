@@ -1,0 +1,151 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url(./abstract-g3f5887e82_1920.jpg);
+    height: 75vh;
+}
+#header{
+    background-color: black;
+    color:white;
+    height:5vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#home{
+    margin-left:1vw;
+    color:white;
+    background-color: black;
+    border: none;
+}
+#Footer{
+    background-color: black;
+    height:30vh;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+/* id selectors */
+#contentBox{
+    
+    display: flex;
+    flex-direction: row;
+    height:63vh;
+    width:70vw;
+    margin:18vh 0vh 18vh 15vw;
+}
+
+#contentBox>form{
+    display:flex;
+    flex-direction: column;
+    padding:1vw;
+    width:25vw;
+    background-color: #9160DF85;
+    align-items: center;
+}
+#contentBox>form>input{
+    
+    padding:0.5vw;
+    margin: 0.3vw;
+    width:19vw;
+    border-bottom:1px black ;
+}
+#about{
+    background-color:#00000075;
+    color:white;
+    width:40vw;
+}
+#about>h1,h2{
+    margin:0.5vw 0vw 0.1vw 1vw;
+    font-size: 2.5em;
+    padding:0.5vw;
+}
+
+#about>div{
+    font-size:1.3em;
+    margin:1vw;
+}
+#about>div>span{
+    color:#caf0f8;
+}
+::placeholder{
+    color:black;
+    font-size: medium;
+}
+#submitBtn{
+    width:7vw;
+    height:5vh;
+    margin-top:5vh;
+    background-color: #432475;
+    border: thin solid white;
+    color:white;
+}
+
+#handles{
+    justify-content: space-around;
+}
+
+#Twitter{
+    background-color: #091BF2;
+    color:white;
+}
+#Google{
+    background-color: #FEFDFF;
+    
+}
+#Facebook{
+    background-color: #9181FE;
+    color:white;
+}
+/* class Selectors */
+.handleBtn{
+    width:5vw;
+    margin:1.5vh 0.5vh 0.5vh 0.5vh;
+    border: none;
+    opacity: 0.80;
+}
+.message{
+    color:white;
+    font-size: large;
+}
+@media(max-width:920px)
+{
+    #contentBox{
+        flex-direction: column;
+        height:120vh;
+        margin-left: 18vw;
+    }
+    #contentBox>form{
+        margin-top:15px;
+        width: 60vw;
+        height:110vh;
+    }
+    #contentBox>form>input{
+        width: 50vw;
+        opacity: 0.75;
+    }
+    #about{
+        width:60vw;
+        height:100vw;
+    }
+    #about>h1,h2{
+        font-size:5vh;
+    }
+    #about>div{
+        font-size:3vh;
+    }
+    #submitBtn{
+        width:20vw;
+    }
+    .handleBtn{
+        width:20vw;
+    }
+    #handles{
+        display: flex;
+        flex-direction: column;
+    }
+}
